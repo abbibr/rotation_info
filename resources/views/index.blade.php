@@ -60,42 +60,50 @@
     <title>Rotation | Startup</title>
 
     <style>
-         /* Ensure controls-box aligns items in one line */
-      .controls-box {
-        display: flex;
-        align-items: center;
-      }
-      /* Inline positioning for desktop switcher */
-      .language-switcher {
-        position: static !important;
-        margin-left: 12px;
-      }
-      /* Style dropdown button */
-      .language-switcher .btn {
-        background-color: #f8f9fa;
-        border: 1px solid #ced4da;
-        border-radius: 25px;
-        padding: 6px 12px;
-        font-size: 14px;
-        color: #212529;
-      }
-      /* Style menu items */
-      .language-switcher .dropdown-menu {
-        min-width: 140px;
-        font-size: 14px;
-      }
-      .language-switcher .dropdown-item {
-        padding: 8px 12px;
-        color: #212529;
-      }
-      .language-switcher .dropdown-item:hover {
-        background-color: #e9ecef;
-        color: #0056b3;
-      }
-      /* Hide desktop switcher on mobile, handled by mobile nav item */
-      @media (max-width: 991.98px) {
-        .language-switcher { display: none !important; }
-      }
+        /* Ensure controls-box aligns items in one line */
+        .controls-box {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Inline positioning for desktop switcher */
+        .language-switcher {
+            position: static !important;
+            margin-left: 12px;
+        }
+
+        /* Style dropdown button */
+        .language-switcher .btn {
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            border-radius: 25px;
+            padding: 6px 12px;
+            font-size: 14px;
+            color: #212529;
+        }
+
+        /* Style menu items */
+        .language-switcher .dropdown-menu {
+            min-width: 140px;
+            font-size: 14px;
+        }
+
+        .language-switcher .dropdown-item {
+            padding: 8px 12px;
+            color: #212529;
+        }
+
+        .language-switcher .dropdown-item:hover {
+            background-color: #e9ecef;
+            color: #0056b3;
+        }
+
+        /* Hide desktop switcher on mobile, handled by mobile nav item */
+        @media (max-width: 991.98px) {
+            .language-switcher {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 
@@ -127,25 +135,26 @@
                 <div class="links menu-wrapper">
                     <ul class="list-js links-list">
                         <li class="menu-item has-sub-menu">
-                            <a class="menu-link active" href="#page-hero">@lang('rotation.home')<i class="fas fa-plus plus-icon"> </i></a>
+                            <a class="menu-link active" href="#page-hero">@lang('rotation.home')<i
+                                    class="fas fa-plus plus-icon"> </i></a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="#services">Service </a>
+                            <a class="menu-link" href="#services">@lang('rotation.service') </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="#about">About </a>
+                            <a class="menu-link" href="#about">@lang('rotation.about') </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="#whyus">Why Us </a>
+                            <a class="menu-link" href="#whyus">@lang('rotation.why_us') </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="#portfolio">Website </a>
+                            <a class="menu-link" href="#portfolio">@lang('rotation.website') </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="#faq">FAQ </a>
+                            <a class="menu-link" href="#faq">@lang('rotation.faq') </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-link" href="#contact-us">contact us </a>
+                            <a class="menu-link" href="#contact-us">@lang('rotation.contact') </a>
                         </li>
                         <li class="menu-item d-lg-none">
                             <div class="dropdown">
@@ -156,9 +165,9 @@
                                     <li><a class="dropdown-item" href="{{ route('locale', ['lang' => 'en']) }}">🇬🇧
                                             English</a></li>
                                     <li><a class="dropdown-item" href="{{ route('locale', ['lang' => 'uz']) }}">🇺🇿
-                                            Uzbek</a></li>
+                                            O`zbekcha</a></li>
                                     <li><a class="dropdown-item" href="{{ route('locale', ['lang' => 'ru']) }}">🇷🇺
-                                            Russian</a></li>
+                                            Русский</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -192,9 +201,9 @@
                             <li><a class="dropdown-item" href="{{ route('locale', ['lang' => 'en']) }}">🇬🇧
                                     English</a></li>
                             <li><a class="dropdown-item" href="{{ route('locale', ['lang' => 'uz']) }}">🇺🇿
-                                    Uzbek</a></li>
+                                    O`zbekcha</a></li>
                             <li><a class="dropdown-item" href="{{ route('locale', ['lang' => 'ru']) }}">🇷🇺
-                                    Russian</a></li>
+                                    Русский</a></li>
                         </ul>
                     </div>
                     <!--mini shoping cart-->
@@ -240,10 +249,10 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="pre-title">Work solutions</div>
+                                <div class="pre-title">@lang('rotation.work_solutions')</div>
                                 <h1 class="hero-title">
-                                    Smart IT Solutions for Smarter
-                                    <span class="featured-text">Workforce
+                                    @lang('rotation.it_solutions')
+                                    <span class="featured-text">@lang('rotation.workforce')
                                         <svg xmlns="http://www.w3.org/2000/svg" class="wavey-underline"
                                             width="1104.664" height="100.188" viewBox="0 0 1104.664 100.188">
                                             <path id="Path_208" data-name="Path 208"
@@ -255,14 +264,13 @@
                             </div>
                             <div class="col-10">
                                 <p class="hero-subtitle">
-                                    Your Dream Job is Near to YOU! Explore top career
-                                    opportunities that match your skills and ambitions. Connect
-                                    with leading companies and take the next step toward success
+                                    @lang('rotation.text_head')
                                 </p>
                             </div>
                             <div class="col-12">
                                 <div class="cta-links-area">
-                                    <a class="btn-outline cta-link cta-link-primary" href="#0">start now</a>
+                                    <a class="btn-outline cta-link cta-link-primary"
+                                        href="#0">@lang('rotation.start')</a>
                                 </div>
                             </div>
                         </div>
@@ -287,19 +295,17 @@
         <div class="container">
             <div class="sec-heading">
                 <div class="content-area">
-                    <span class="pre-title wow fadeInUp" data-wow-delay=".2s">services</span>
+                    <span class="pre-title wow fadeInUp" data-wow-delay=".2s">@lang('rotation.service')</span>
                     <h2 class="title wow fadeInUp" data-wow-delay=".4s">
-                        <span class="hollow-text">services</span> we offer
+                        <span class="hollow-text">@lang('rotation.service')</span> @lang('rotation.offer')
                     </h2>
                     <p class="subtitle wow fadeInUp" data-wow-delay=".6s">
-                        We provide top-tier career opportunities, connecting job seekers
-                        with leading companies.<br />
-                        Explore our services and take the next step in your career
-                        journey.
+                        @lang('rotation.provide_text')<br />
+                        @lang('rotation.explore_services')
                     </p>
                 </div>
                 <div class="cta-area wow fadeInUp" data-wow-delay=".8s">
-                    <a class="cta-btn btn-solid">see all services <i class="bi bi-arrow-right icon"></i></a>
+                    <a class="cta-btn btn-solid">@lang('rotation.all_services') <i class="bi bi-arrow-right icon"></i></a>
                 </div>
             </div>
             <div class="row gx-4 gy-4 services-row">
@@ -311,14 +317,13 @@
                         </div>
                         <span class="service-num hollow-text">1 </span>
                         <div class="service-content">
-                            <h3 class="service-title">Business Idea</h3>
+                            <h3 class="service-title">@lang('rotation.business_idea')</h3>
                             <p class="service-text">
-                                A platform that connects individuals in Uzbekistan with
-                                part-time, temporary, intern, and freelance job opportunities, helping
-                                them find flexible work easily.
+                                @lang('rotation.platform_connects')
                             </p>
                         </div>
-                        <a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon"></i></a>
+                        <a class="read-more" href="#0">@lang('rotation.read_more')<i
+                                class="bi bi-arrow-right icon"></i></a>
                     </div>
                     <!-- End First service box   -->
                 </div>
@@ -330,14 +335,13 @@
                         </div>
                         <span class="service-num hollow-text">2 </span>
                         <div class="service-content">
-                            <h3 class="service-title">Customer Segments (Business)</h3>
+                            <h3 class="service-title">@lang('rotation.customer_segments')</h3>
                             <p class="service-text">
-                                Supporting businesses in need of reliable part-time,
-                                temporary, and freelance workers, making it easier to find
-                                skilled talent for short-term or flexible roles.
+                                @lang('rotation.supporting')
                             </p>
                         </div>
-                        <a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon"></i></a>
+                        <a class="read-more" href="#0">@lang('rotation.read_more')<i
+                                class="bi bi-arrow-right icon"></i></a>
                     </div>
                     <!-- End Second service box-->
                 </div>
@@ -349,14 +353,13 @@
                         </div>
                         <span class="service-num hollow-text">3 </span>
                         <div class="service-content">
-                            <h3 class="service-title">Our Target</h3>
+                            <h3 class="service-title">@lang('rotation.our_target')</h3>
                             <p class="service-text">
-                                Targeting 16-25 aged individuals, mostly students seeking
-                                extra income, as well as those with little or no experience
-                                and professionals needing flexible work.
+                                @lang('rotation.targeting')
                             </p>
                         </div>
-                        <a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon"></i></a>
+                        <a class="read-more" href="#0">@lang('rotation.read_more')<i
+                                class="bi bi-arrow-right icon"></i></a>
                     </div>
                     <!-- End Third service box-->
                 </div>
@@ -375,12 +378,12 @@
                         <div class="text-area">
                             <div class="sec-heading light-title">
                                 <div class="content-area">
-                                    <span class="pre-title wow fadeInUp" data-wow-delay=".2s">about Us</span>
+                                    <span class="pre-title wow fadeInUp"
+                                        data-wow-delay=".2s">@lang('rotation.about_us')</span>
                                     <h2 class="title wow fadeInUp" data-wow-delay=".4s">
-                                        <span class="hollow-text">You</span> with us you can do
-                                        the
+                                        <span class="hollow-text">@lang('rotation.you')</span> @lang('rotation.with_us')
                                         <span class="featured-text">
-                                            impossible.
+                                            @lang('rotation.impossible')
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150"
                                                 preserveAspectRatio="none">
                                                 <path
@@ -391,10 +394,7 @@
                                 </div>
                             </div>
                             <p class="about-text">
-                                Rotation - platform that helps both job seekers and employers
-                                find work and hire talent across various industries. It offers
-                                opportunities for both offline and remote jobs, making the
-                                hiring and job search process more efficient and accessible.
+                                @lang('rotation.rotation_info')
                             </p>
                             <div class="info-items-list">
                                 <div class="row">
@@ -402,11 +402,9 @@
                                         <div class="info-item">
                                             <i class="flaticon-medal info-icon"></i>
                                             <div class="info-content">
-                                                <h5 class="info-title">first on field</h5>
+                                                <h5 class="info-title">@lang('rotation.first')</h5>
                                                 <p class="info-text">
-                                                    Rotation Startup is the first in the field,
-                                                    connecting job seekers and employers with nearby and
-                                                    remote opportunities in various industries.
+                                                    @lang('rotation.rotation_startup')
                                                 </p>
                                             </div>
                                         </div>
@@ -415,11 +413,9 @@
                                         <div class="info-item">
                                             <i class="flaticon-game-console info-icon"></i>
                                             <div class="info-content">
-                                                <h5 class="info-title">easy to reach</h5>
+                                                <h5 class="info-title">@lang('rotation.easy_reach')</h5>
                                                 <p class="info-text">
-                                                    You can easily find a job nearby in any field,
-                                                    allowing you to work in your preferred industry
-                                                    while staying close to your location.
+                                                    @lang('rotation.easily_find')
                                                 </p>
                                             </div>
                                         </div>
@@ -428,12 +424,9 @@
                                         <div class="info-item">
                                             <i class="flaticon-map info-icon"></i>
                                             <div class="info-content">
-                                                <h5 class="info-title">worldwide services</h5>
+                                                <h5 class="info-title">@lang('rotation.worldwide_service')</h5>
                                                 <p class="info-text">
-                                                    It enables remote work with global companies,
-                                                    allowing professionals to collaborate
-                                                    internationally and gain valuable experience in a
-                                                    global environment.
+                                                    @lang('rotation.enable_remote')
                                                 </p>
                                             </div>
                                         </div>
@@ -442,11 +435,9 @@
                                         <div class="info-item">
                                             <i class="flaticon-technical-support-1 info-icon"></i>
                                             <div class="info-content">
-                                                <h5 class="info-title">24/7 support</h5>
+                                                <h5 class="info-title">@lang('rotation.support')</h5>
                                                 <p class="info-text">
-                                                    We offer 24/7 support to assist job seekers and
-                                                    employers with job postings, applications, and any
-                                                    inquiries at any time.
+                                                    @lang('rotation.offer_support')
                                                 </p>
                                             </div>
                                         </div>
@@ -484,26 +475,23 @@
                         <div class="text-area">
                             <div class="sec-heading light-title">
                                 <div class="content-area">
-                                    <span class="pre-title wow fadeInUp" data-wow-delay=".2s">why choose us</span>
+                                    <span class="pre-title wow fadeInUp"
+                                        data-wow-delay=".2s">@lang('rotation.why_choose_us')</span>
                                     <h2 class="title wow fadeInUp" data-wow-delay=".4s">
-                                        Why our <span class="hollow-text"> customers</span> choose
-                                        <span class="featured-text">working
+                                        <span class="hollow-text">@lang('rotation.clients_rot')</span>
+                                        <span class="featured-text">@lang('rotation.working')
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150"
                                                 preserveAspectRatio="none">
                                                 <path
                                                     d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7">
                                                 </path>
                                             </svg></span>
-                                        with us
+                                        @lang('rotation.with_us_rot')
                                     </h2>
                                 </div>
                             </div>
                             <p class="about-text">
-                                Employers save time as our AI filters and matches candidates
-                                based on company requirements, delivering the best-fit
-                                professionals effortlessly. Job seekers enjoy
-                                flexibility—whether it's full-time, part-time, internship, or short-term
-                                gigs work with international companies.
+                                @lang('rotation.save_time')
                             </p>
                             <div class="info-items-list">
                                 <div class="row">
@@ -511,54 +499,22 @@
                                         <div class="info-item">
                                             <span class="info-number">01.</span>
                                             <div class="info-content">
-                                                <h5 class="info-title">latest technologies</h5>
+                                                <h5 class="info-title">@lang('rotation.latest_technology')</h5>
                                                 <p class="info-text">
-                                                    At Rotation, our advanced AI technology simplifies
-                                                    the hiring process for employers. Instead of
-                                                    manually sorting through countless resumes, our AI
-                                                    intelligently analyzes applications, matches
-                                                    candidates based on company requirements, and
-                                                    compiles a shortlist of the most suitable
-                                                    professionals. This saves time, reduces hiring
-                                                    costs, and ensures that only the best-fit candidates
-                                                    reach employers.
+                                                    @lang('rotation.at_rotation')
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="col-12">
-                      <div class="info-item">
-                        <span class="info-number">02.</span>
-                        <div class="info-content">
-                          <h5 class="info-title">uniqe solutions</h5>
-                          <li class="info-text">
-                            Clear job descriptions (67%) and pay rates (67%)
-                            were the most important information that needed to
-                            be included.
-                          </li>
-                          <li class="info-text">
-                            Lack of available opportunities and low pay were
-                            named as the main challenges
-                          </li>
-                        </div>
-                      </div>
-                    </div> -->
                                     <div class="col-12">
                                         <div class="info-item">
                                             <span class="info-number">02.</span>
                                             <div class="info-content">
                                                 <h5 class="info-title">
-                                                    Seamless Job Data Management
+                                                    @lang('rotation.seamless_job')
                                                 </h5>
                                                 <p class="info-text">
-                                                    At Rotation, we provide a centralized and intuitive
-                                                    platform for managing job data efficiently.
-                                                    Employers can effortlessly post job openings, track
-                                                    applications, and manage candidate pipelines—all in
-                                                    one place. Our system ensures real-time updates,
-                                                    smart filtering, and easy collaboration between HR
-                                                    teams and recruiters, reducing administrative
-                                                    workload and enhancing decision-making.
+                                                    @lang('rotation.rotation_provide')
                                                 </p>
                                             </div>
                                         </div>
@@ -574,59 +530,28 @@
     </section>
     <!-- End  about Section-->
 
-    <!-- Start  stats Section-->
-    <!-- <section class="stats js-stats-counter mega-section">
-      <div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/pattern-bg-3.jpg" data-bg-opacity=".2"></div>
-      <div class="container">
-        <div class="stats-inner">
-          <div class="row ">
-            <div class="col-12 col-md-6 col-lg-3 stat-box ">
-              <div class="stat-box-inner  " data-tilt="data-tilt"><i class="flaticon-project-management stat-icon"></i>
-                <p class="stat-num "><span class="counter" data-from="10" data-to="750" data-speed="3000" data-refresh-interval="50"></span><span class="sign">+</span></p><span class="stat-desc">finished projects</span>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 stat-box ">
-              <div class="stat-box-inner  " data-tilt="data-tilt"><i class="flaticon-content-management stat-icon"></i>
-                <p class="stat-num "><span class="counter" data-from="0" data-to="23" data-speed="3000" data-refresh-interval="50"></span><span class="sign">+</span></p><span class="stat-desc">Created jobs</span>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 stat-box ">
-              <div class="stat-box-inner  " data-tilt="data-tilt"><i class="flaticon-user stat-icon"></i>
-                <p class="stat-num "><span class="counter" data-from="0" data-to="200" data-speed="3000" data-refresh-interval="50"></span><span class="sign">+</span></p><span class="stat-desc">happy customers</span>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 stat-box ">
-              <div class="stat-box-inner  " data-tilt="data-tilt"><i class="flaticon-aim stat-icon"></i>
-                <p class="stat-num "><span class="counter" data-from="0" data-to="6" data-speed="3000" data-refresh-interval="50"></span><span class="sign">+</span></p><span class="stat-desc">years Of exprience</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End  stats Section-->
-
     <!-- Start  portfolio-slider Section-->
     <section class="portfolio portfolio-blocks mega-section" id="portfolio">
         <div class="container">
             <div class="sec-heading">
                 <div class="content-area">
-                    <span class="pre-title wow fadeInUp" data-wow-delay=".2s">portfolio</span>
+                    <span class="pre-title wow fadeInUp" data-wow-delay=".2s">@lang('rotation.portfolio')</span>
                     <h2 class="title wow fadeInUp" data-wow-delay=".4s">
-                        Awesome <span class="hollow-text">Rotation</span>
+                        <span class="hollow-text">@lang('rotation.awesome_rotation')</span>
                     </h2>
                 </div>
                 <div class="cta-area wow fadeInUp" data-wow-delay=".8s">
-                    <a class="cta-btn btn-solid" href="#">see more <i class="bi bi-arrow-right icon"></i></a>
+                    <a class="cta-btn btn-solid" href="#">@lang('rotation.see_more') <i
+                            class="bi bi-arrow-right icon"></i></a>
                 </div>
             </div>
             <div class="portfolio-wrapper">
                 <!--a menu of links to show the photos users needs   -->
                 <ul class="portfolio-btn-list wow fadeInUp" data-wow-delay=".2s">
-                    <li class="portfolio-btn active" data-filter="*">All</li>
-                    <li class="portfolio-btn" data-filter=".mobile">Website</li>
-                    <li class="portfolio-btn" data-filter=".web">Dashboards</li>
-                    <li class="portfolio-btn" data-filter=".hosting">Authentication</li>
+                    <li class="portfolio-btn active" data-filter="*">@lang('rotation.all')</li>
+                    <li class="portfolio-btn" data-filter=".mobile">@lang('rotation.website')</li>
+                    <li class="portfolio-btn" data-filter=".web">@lang('rotation.dashboards')</li>
+                    <li class="portfolio-btn" data-filter=".hosting">@lang('rotation.authentication')</li>
                 </ul>
                 <div class="portfolio-group wow fadeIn" data-wow-delay=".4s">
                     <div class="row">
@@ -768,7 +693,7 @@
                         <div class="content-area">
                             <span class="pre-title wow fadeInUp" data-wow-delay=".2s">faqs</span>
                             <h2 class="title wow fadeInUp" data-wow-delay=".4s">
-                                <span class="hollow-text">More </span>key details
+                                <span class="hollow-text">@lang('rotation.key_details')</span>
                             </h2>
                         </div>
                     </div>
@@ -779,7 +704,7 @@
                                 <h5 class="mb-0 faq-title">
                                     <button class="btn btn-link faq-btn collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                                        What is Rotation?
+                                        @lang('rotation.what_is')
                                     </button>
                                 </h5>
                             </div>
@@ -787,14 +712,7 @@
                                 data-bs-parent="#accordion">
                                 <div class="card-body">
                                     <p class="faq-answer">
-                                        Rotation is an innovative job data management and IT
-                                        solutions platform designed to connect businesses with
-                                        professionals while streamlining the hiring process. It
-                                        provides businesses with smart AI-powered tools to manage
-                                        job postings, applications, and workforce data. For job
-                                        seekers, Rotation offers a seamless way to explore
-                                        full-time, part-time, temporary, and freelance job
-                                        opportunities with leading companies.
+                                        @lang('rotation.answer_ques')
                                     </p>
                                 </div>
                             </div>
@@ -804,7 +722,7 @@
                                 <h5 class="mb-0 faq-title">
                                     <button class="btn btn-link faq-btn collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
-                                        How does Rotation help businesses?
+                                        @lang('rotation.how_does')
                                     </button>
                                 </h5>
                             </div>
@@ -812,29 +730,23 @@
                                 data-bs-parent="#accordion">
                                 <div class="card-body">
                                     <p class="faq-answer">
-                                        Rotation helps businesses reduce hiring time and improve
-                                        recruitment efficiency by offering:
+                                        @lang('rotation.helps_business')
                                     </p>
                                     <li class="faq-answer">
-                                        AI-powered candidate matching to find the best
-                                        professionals.
+                                        @lang('rotation.ai_powered')
                                     </li>
                                     <li class="faq-answer">
-                                        Automated job data management for easy tracking of
-                                        applications.
+                                        @lang('rotation.automated_job')
                                     </li>
                                     <li class="faq-answer">
-                                        Seamless job postings and hiring workflows to improve the
-                                        recruitment process.
+                                        @lang('rotation.job_postings')
                                     </li>
                                     <li class="faq-answer">
-                                        Cloud-based technology to manage hiring processes from
-                                        anywhere.
+                                        @lang('rotation.cloud_based')
                                     </li>
                                     <br />
                                     <p class="faq-answer">
-                                        By using Rotation, businesses can save time, cut
-                                        recruitment costs, and hire top talent effortlessly.
+                                        @lang('rotation.by_using')
                                     </p>
                                 </div>
                             </div>
@@ -844,7 +756,7 @@
                                 <h5 class="mb-0 faq-title">
                                     <button class="btn btn-link faq-btn collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
-                                        Who can use Rotation?
+                                        @lang('rotation.who_can')
                                     </button>
                                 </h5>
                             </div>
@@ -852,17 +764,11 @@
                                 data-bs-parent="#accordion">
                                 <div class="card-body">
                                     <p class="faq-answer">
-                                        Rotation is designed for: <br>
+                                        @lang('rotation.rot_is') <br>
                                     </p>
-                                    <li class="faq-answer">Businesses & Employers –
-                                        Companies looking to hire skilled professionals without
-                                        spending hours sorting through applications.</li>
-                                    <li class="faq-answer"> Recruiters &
-                                        HR Teams – Organizations that need a centralized hiring
-                                        solution with advanced job data management. </li>
-                                    <li class="faq-answer">Job Seekers &
-                                        Freelancers – Individuals searching for full-time,
-                                        part-time, contract, or freelance job opportunities.</li>
+                                    <li class="faq-answer">@lang('rotation.business&')</li>
+                                    <li class="faq-answer">@lang('rotation.recruiters') </li>
+                                    <li class="faq-answer">@lang('rotation.freelancers')</li>
                                     </p>
                                 </div>
                             </div>
@@ -872,27 +778,22 @@
                                 <h5 class="mb-0 faq-title">
                                     <button class="btn btn-link faq-btn collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
-                                        What makes Rotation different from other hiring platforms?
+                                        @lang('rotation.unique')
                                     </button>
                                 </h5>
                             </div>
                             <div class="collapse" id="collapse-4" aria-labelledby="collapse-4"
                                 data-bs-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="faq-answer">Rotation stands out because of its AI-driven job-matching
-                                        system, seamless user experience,
-                                        and modern IT solutions that help businesses and job seekers alike. Unlike
-                                        traditional job
-                                        boards, Rotation:</p>
-                                    <li class="faq-answer">Uses smart automation to match candidates with jobs faster.
+                                    <p class="faq-answer">@lang('rotation.stands_out')</p>
+                                    <li class="faq-answer">@lang('rotation.automation_match')
                                     </li>
                                     <li class="faq-answer">
-                                        Offers flexible hiring solutions for full-time, part-time, and freelance roles.
+                                        @lang('rotation.flexible_hire')
                                     </li>
-                                    <li class="faq-answer">Provides real-time job tracking and data insights for
-                                        businesses.</li>
+                                    <li class="faq-answer">@lang('rotation.real_time_job')</li>
                                     <li class="faq-answer">
-                                        Ensures a professional and responsive UI/UX for an effortless experience.
+                                        @lang('rotation.ensure_job')
                                     </li>
                                 </div>
                             </div>
@@ -902,23 +803,23 @@
                                 <h5 class="mb-0 faq-title">
                                     <button class="btn btn-link faq-btn collapsed" data-bs-toggle="collapse"
                                         data-bs-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
-                                        What kind of job opportunities are available on Rotation?
+                                        @lang('rotation.what_kinda')
                                     </button>
                                 </h5>
                             </div>
                             <div class="collapse" id="collapse-5" aria-labelledby="collapse-5"
                                 data-bs-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="faq-answer">Rotation offers a wide range of job opportunities, including:
+                                    <p class="faq-answer">@lang('rotation.rot_offers')
                                     </p>
-                                    <li class="faq-answer">Full-time positions in various industries.</li>
+                                    <li class="faq-answer">@lang('rotation.full_time')</li>
                                     <li class="faq-answer">
-                                        Part-time jobs for flexible work schedules.
+                                        @lang('rotation.part_time')
                                     </li>
-                                    <li class="faq-answer">Freelance and contract work with international companies.
+                                    <li class="faq-answer">@lang('rotation.freelance_time')
                                     </li>
                                     <li class="faq-answer">
-                                        Short-term gigs and remote work for professionals looking for flexible options.
+                                        @lang('rotation.freelance_time')
                                     </li>
                                 </div>
                             </div>
@@ -944,14 +845,15 @@
                             <div class="sec-heading centered">
                                 <div class="content-area">
                                     <h2 class="title wow fadeInUp" data-wow-delay=".4s">
-                                        Have any questions? Let's answer them
+                                        @lang('rotation.questions?')
                                     </h2>
                                 </div>
                             </div>
                             <div class="contact-form-inputs wow fadeInUp" data-wow-delay=".6s">
                                 <div class="custom-form-area input-boxed">
                                     <!--Form To have user messages-->
-                                    <form action="{{ route('send.mail') }}" method="post" class="main-form" id="contact-us-form">
+                                    <form action="{{ route('send.mail') }}" method="post" class="main-form"
+                                        id="contact-us-form">
                                         @csrf
                                         <span class="done-msg"></span>
                                         <div class="row">
@@ -993,7 +895,7 @@
                                             <div class="col-12 submit-wrapper">
                                                 <button class="btn-solid" id="submit-btn" type="submit"
                                                     name="UserSubmit">
-                                                    Send your message
+                                                    @lang('rotation.send_msg')
                                                 </button>
                                             </div>
                                         </div>
@@ -1122,67 +1024,67 @@
                             <form class="one-field-form" method="post" action="#0">
                                 <div class="field-group">
                                     <label class="email-label" for="email-input">
-                                        Subscribe to our news letter</label>
+                                        @lang('rotation.news_letter')</label>
                                     <input class="email-input" type="email" value="" name="EMAIL"
                                         id="email-input" placeholder="Email Address" autocomplete="off" />
                                     <div class="cta-area">
-                                        <input class="btn-solid subscribe-btn" type="submit" value="Subscribe"
-                                            name="subscribe" />
+                                        <input class="btn-solid subscribe-btn" type="submit"
+                                            value="@lang('rotation.subscribe')" name="subscribe" />
                                     </div>
                                 </div>
-                                <span class="email-notice">*we will not share your personal info</span>
+                                <span class="email-notice">*@lang('rotation.not_share')</span>
                             </form>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-lg-2 footer-col">
-                    <h2 class="footer-col-title">useful links</h2>
+                    <h2 class="footer-col-title">@lang('rotation.useful_links')</h2>
                     <div class="footer-col-content-wrapper">
                         <ul class="footer-menu">
                             <li class="footer-menu-item">
                                 <i class="bi bi-arrow-right icon"></i><a class="footer-menu-link"
-                                    href="#0">Home</a>
+                                    href="#0">@lang('rotation.home')</a>
                             </li>
                             <li class="footer-menu-item">
                                 <i class="bi bi-arrow-right icon"></i><a class="footer-menu-link"
-                                    href="#0">Service</a>
+                                    href="#0">@lang('rotation.service')</a>
                             </li>
                             <li class="footer-menu-item">
                                 <i class="bi bi-arrow-right icon"></i><a class="footer-menu-link"
-                                    href="#0">About</a>
+                                    href="#0">@lang('rotation.about')</a>
                             </li>
                             <li class="footer-menu-item">
-                                <i class="bi bi-arrow-right icon"></i><a class="footer-menu-link" href="#0">Why
-                                    Us</a>
+                                <i class="bi bi-arrow-right icon"></i><a class="footer-menu-link"
+                                    href="#0">@lang('rotation.why_us')</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-6 col-lg-2 footer-col">
-                    <h2 class="footer-col-title">Resources</h2>
+                    <h2 class="footer-col-title">@lang('rotation.resources')</h2>
                     <div class="footer-col-content-wrapper">
                         <ul class="footer-menu">
                             <li class="footer-menu-item">
                                 <i class="bi bi-arrow-right icon"></i><a class="footer-menu-link"
-                                    href="#0">Website</a>
+                                    href="#0">@lang('rotation.website')</a>
                             </li>
                             <li class="footer-menu-item">
                                 <i class="bi bi-arrow-right icon"></i><a class="footer-menu-link"
-                                    href="#0">Faqs</a>
+                                    href="#0">@lang('rotation.faq')</a>
                             </li>
                             <li class="footer-menu-item">
                                 <i class="bi bi-arrow-right icon"></i><a class="footer-menu-link"
-                                    href="#0">Contact</a>
+                                    href="#0">@lang('rotation.contact')</a>
                             </li>
                             <li class="footer-menu-item">
                                 <i class="bi bi-arrow-right icon"></i><a class="footer-menu-link"
-                                    href="#0">News</a>
+                                    href="#0">@lang('rotation.news')</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 footer-col">
-                    <h2 class="footer-col-title">contact information</h2>
+                    <h2 class="footer-col-title">@lang('rotation.contact_info')</h2>
                     <div class="footer-col-content-wrapper">
                         <div class="contact-info-card">
                             <i class="bi bi-envelope icon"></i><a class="text-lowercase info"
@@ -1229,14 +1131,14 @@
                 <div class="row">
                     <div class="col-12 col-md-6 d-flex justify-content-start">
                         <p class="creadits">
-                            &copy; 2025 Created by:
+                            &copy; 2025 @lang('rotation.created_by')
 
                             <a class="link" href="#0">ROTATION</a>
                         </p>
                     </div>
                     <div class="col-12 col-md-6 d-flex justify-content-end">
                         <div class="terms-links">
-                            <a href="#0">Terms of Use </a> | <a href="#0">Privacy Policy</a>
+                            <a href="#0">@lang('rotation.terms') </a> | <a href="#0">@lang('rotation.privacy')</a>
                         </div>
                     </div>
                 </div>
