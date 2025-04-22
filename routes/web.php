@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SendMailController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -12,3 +13,5 @@ Route::get('/locale/{lang}', function ($lang) {
     }
     return redirect()->back();
 })->name('locale');
+
+Route::post('/send/mail', [SendMailController::class, 'store'])->name('send.mail');
