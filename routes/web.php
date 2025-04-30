@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\SendMailController;
+use App\Http\Controllers\WaitListController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -15,3 +16,5 @@ Route::get('/locale/{lang}', function ($lang) {
 })->name('locale');
 
 Route::post('/send/mail', [SendMailController::class, 'store'])->name('send.mail');
+
+Route::post('/waitlist/store', [WaitListController::class, 'store'])->name('waitlist.store');

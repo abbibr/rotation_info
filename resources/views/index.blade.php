@@ -269,8 +269,10 @@
                             </div>
                             <div class="col-12">
                                 <div class="cta-links-area">
-                                    <a class="btn-outline cta-link cta-link-primary"
-                                        href="#0">@lang('rotation.start')</a>
+                                    <a class="btn-outline cta-link cta-link-primary" href="#0"
+                                        data-bs-toggle="modal" data-bs-target="#waitlistModal">
+                                        @lang('rotation.start')
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -288,6 +290,79 @@
             </div>
         </div>
     </section>
+
+    <!-- Popup Waitlist Modal -->
+    <div class="modal fade" id="waitlistModal" tabindex="-1" aria-labelledby="waitlistModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="waitlistModalLabel">Request Access</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="mb-3 text-success" style="font-size: 2rem;">📧</div>
+                    <p class="text-muted mb-4">Join our waitlist and our team will reach out to you as soon as
+                        possible.</p>
+                    <form action={{ route('waitlist.store') }} method="POST"> <!-- Update action as needed -->
+                        @csrf
+
+                        <div class="mb-3 text-start">
+                            <input type="text" name="name"
+                                class="form-control @error('name') is-invalid @enderror" placeholder="Enter your name"
+                                value={{ old('name') }}>
+                        </div>
+
+                        @error('name')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+
+                        <div class="mb-3 text-start">
+                            <input type="email" name="email"
+                                class="form-control @error('email') is-invalid @enderror"
+                                placeholder="Enter your email address" value={{ old('email') }}>
+                        </div>
+
+                        @error('email')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+
+                        <div class="mb-3 text-start">
+                            <input type="text" name="phone"
+                                class="form-control @error('phone') is-invalid @enderror"
+                                placeholder="Enter your phone number" value="{{ old('phone') }}">
+                        </div>
+
+                        @error('phone')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+
+                        <button type="submit" class="btn btn-primary w-100">Request access</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{-- WaitList --}}
+    @if (session('success'))
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100;">
+            <div class="toast align-items-center text-bg-success border-0 show" role="alert" aria-live="assertive"
+                aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        {{ session('success') }}
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    @endif
+
+
+
     <!--End of .hero-text-area-->
     <!-- End  Page hero-->
     <!-- Start  services Section-->
@@ -1190,6 +1265,16 @@
 
     <!--     main     -->
     <script src="{{ asset('js/main.js') }}"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toastEl = document.querySelector('.toast');
+            if (toastEl) {
+                const bsToast = new bootstrap.Toast(toastEl, { delay: 3000 });
+                bsToast.show();
+            }
+        });
+    </script>    
 
 </body>
 
