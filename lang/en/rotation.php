@@ -9,55 +9,51 @@ return [
     'faq' => 'FAQ',
     'contact' => 'Contact us',
     'work_solutions' => 'Work Solutions',
-    'it_solutions' => 'Smart IT Solutions for Smarter',
-    'workforce' => 'Workforce',
+    'it_solutions' => 'Built for Young Talent in',
+    'workforce' => 'Uzbekistan',
     'text_head' => 'Your Dream Job is Near to YOU! Explore top career opportunities that match your 
             skills and ambitions. Connect with leading companies and take the next step toward success',
     'start' => 'Start Now',
-    'offer' => 'We Offer',
+    'offer' => 'Launch Your Career with us',
     'provide_text' => 'We provide top-tier career opportunities, connecting job seekers
                         with leading companies.',
     'explore_services' => 'Explore our services and take the next step in your career journey.',
     'all_services' => 'See All Services',
     'read_more' => 'Read More',
     'business_idea' => 'Business Idea',
-    'platform_connects' => 'A platform that connects individuals in Uzbekistan with
-                                part-time, temporary, intern, and freelance job opportunities, helping
-                                them find flexible work easily.',
-    'customer_segments' => 'Customer Segments (Business)',
-    'supporting' => 'Supporting businesses in need of reliable part-time,
-                                temporary, and freelance workers, making it easier to find
-                                skilled talent for short-term or flexible roles.',
+    'platform_connects' => 'A platform connecting people in Uzbekistan with flexible work like part-time, full-time, internships, and temp jobs. Now with mock interviews and events, Rotation helps bridge the gap between education and employment.',
+    'customer_segments' => 'Customer Segments',
+    'supporting' => 'We support businesses, universities, and learning centers by helping them find young talent, host events, and run career-related programs through a single easy-to-use platform.',
     'our_target' => 'Our Target',
-    'targeting' => 'Targeting 16-25 aged individuals, mostly students seeking
-                                extra income, as well as those with little or no experience
-                                and professionals needing flexible work.',
+    'targeting' => 'We focus on 16–25-year-olds, including students and early professionals, offering flexible jobs, AI mock interviews, career tools, and access to university-linked career events and opportunities.',
     'about_us' => 'about Us',
     'you' => 'You',
-    'with_us' => 'with us you can do the',
+    'with_us' => 'With us, you can achieve the',
     'impossible' => 'impossible',
     'rotation_info' => 'Rotation - platform that helps both job seekers and employers
                                 find work and hire talent across various industries. It offers
                                 opportunities for both offline and remote jobs, making the
                                 hiring and job search process more efficient and accessible.',
     'first' => 'first on field',
-    'rotation_startup' => 'Rotation Startup is the first in the field, connecting job seekers and employers with nearby and remote opportunities in various industries.',
+    'rotation_startup' => 'Connecting young talents with companies for internships, part-time, and remote jobs, as well as event-based career opportunities.',
     'easy_reach' => 'Easy To Reach',
     'worldwide_service' => 'Worldwide Services',
-    'easily_find' => 'You can easily find a job nearby in any field, allowing you to work in your preferred industry while staying close to your location.',
-    'enable_remote' => 'It enables remote work with global companies, allowing professionals to collaborate internationally and gain valuable experience in a global environment.',
+    'easily_find' => 'Job seekers can easily find flexible, location-based or online opportunities tailored to their skills and preferences.',
+    'enable_remote' => 'We enable remote collaboration with global companies and universities, offering users international job access, events, and learning experiences.',
     'support' => '24/7 support',
-    'offer_support' => 'We offer 24/7 support to assist job seekers and employers with job postings, applications, and any inquiries at any time.',
+    'offer_support' => 'Our team offers round-the-clock support to help users with job applications, event registrations, interviews, and platform-related questions—anytime, anywhere.',
     'why_choose_us' => 'Why choose us',
     'save_time' => 'Employers save time as our AI filters and matches candidates based on company requirements, 
         delivering the best-fit professionals effortlessly. Job seekers enjoy flexibility—whether it`s full-time, 
             part-time, internship, or short-term gigs work with international companies.',
-    'latest_technology' => 'latest technologies',
-    'at_rotation' => 'At Rotation, our advanced AI technology simplifies the hiring process for employers. Instead of manually sorting through countless resumes, our AI intelligently analyzes applications, 
-        matches candidates based on company requirements, and compiles a shortlist of the most suitable professionals.
-         This saves time, reduces hiring costs, and ensures that only the best-fit candidates reach employers.',
-    'seamless_job' => 'Seamless Job Data Management',
-    'rotation_provide' => 'At Rotation, we provide a centralized and intuitive platform for managing job data efficiently. Employers can effortlessly post job openings, track applications, and manage candidate pipelines—all in one place. Our system ensures real-time updates, smart filtering, and easy collaboration between HR teams and recruiters, reducing administrative workload and enhancing decision-making.',
+    'latest_technology' => 'Smart Hiring with AI',
+    'at_rotation' => 'Rotation’s AI matches candidates to job requirements, streamlining hiring and saving time and costs for employers.',
+    'seamless_job' => 'Effortless Job Management',
+    'rotation_provide' => 'Post jobs, track applications, and manage candidates in one platform with real-time updates, Zoom integration, and easy collaboration through our messenger.',
+    'third_one' => 'Opportunities and Networking',
+    'third_one_text' => 'Access flexible job opportunities, online events, and career-building experiences with companies, universities and organizations',
+    'fourth_one' => 'Mock Interviews and Skill Enhancement',
+    'fourth_one_text' => 'Prepare with AI-powered mock interviews and skills development resources to boost job readiness and confidence.',
     'portfolio' => 'portfolio',
     'all' => 'all',
     'dashboards' => 'Dashboards',
@@ -65,9 +61,7 @@ return [
     'key_details' => 'More key details',
     'see_more' => 'See More',
     'what_is' => 'What is Rotation?',
-    'answer_ques' => 'Rotation is an innovative job data management and IT solutions platform designed to connect businesses 
-        with professionals while streamlining the hiring process. It provides businesses with smart AI-powered tools 
-        to manage job postings, applications, and workforce data. For job seekers, Rotation offers a seamless way to explore full-time, part-time, temporary, and freelance job opportunities with leading companies.',
+    'answer_ques' => 'Rotation is an innovative platform that connects businesses with professionals, streamlining hiring through AI-powered tools. It helps companies manage job postings, applications, and workforce data, while offering job seekers flexible full-time, part-time opportunities, online events, mock interviews, and skill-building resources.',
     'how_does' => 'How does Rotation help businesses?',
     'helps_business' => 'Rotation helps businesses reduce hiring time and improve
                                         recruitment efficiency by offering:',
@@ -89,14 +83,9 @@ return [
     'recruiters' => 'Recruiters &
                                         HR Teams – Organizations that need a centralized hiring
                                         solution with advanced job data management.',
-    'freelancers' => 'Freelancers – Individuals searching for full-time,
-                                        part-time, contract, or freelance job opportunities.',
+    'freelancers' => 'Universities and organizations offering career-building events, workshops, and opportunities for students and professionals to connect with employers and enhance their skills.',
     'unique' => 'What makes Rotation different from other hiring platforms?',
-    'stands_out' => 'Rotation stands out because of its AI-driven job-matching
-                                        system, seamless user experience,
-                                        and modern IT solutions that help businesses and job seekers alike. Unlike
-                                        traditional job
-                                        boards, Rotation:',
+    'stands_out' => 'Rotation stands out with AI-powered job matching, integrated online events, and mock interviews. It connects businesses, universities, and job seekers, offering tailored opportunities and skill-building in one seamless platform.',
     'automation_match' => 'Uses smart automation to match candidates with jobs faster.',
     'flexible_hire' => 'Offers flexible hiring solutions for full-time, part-time, and freelance roles.',
     'real_time_job' => 'Provides real-time job tracking and data insights for
@@ -106,7 +95,7 @@ return [
     'rot_offers' => 'Rotation offers a wide range of job opportunities, including:',
     'full_time' => 'Full-time positions in various industries.',
     'part_time' => 'Part-time jobs for flexible work schedules.',
-    'freelance_time' => 'Freelance and contract work with international companies.',
+    'freelance_time' => 'Internships and training with companies.',
     'short_term' => 'Short-term gigs and remote work for professionals looking for flexible options.',
     'questions?' => 'Have any questions? Let`s answer them',
     'send_msg' => 'Send Your Message',
@@ -123,5 +112,10 @@ return [
     'awesome_rotation' => 'Awesome Rotation',
     'clients_rot' => 'Why our customers choose ',
     'working' => 'working',
-    'with_us_rot' => 'with us'
+    'with_us_rot' => 'with us',
+    'request_access' => 'Request Access',
+    'join_now' => 'Join our waitlist and our team will reach out to you as soon as possible.',
+    'name' => "Enter your full name",
+    'email' => 'Enter your email address',
+    'phone' => 'Enter your phone Number'
 ]; 

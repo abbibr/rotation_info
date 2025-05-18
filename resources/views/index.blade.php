@@ -269,10 +269,8 @@
                             </div>
                             <div class="col-12">
                                 <div class="cta-links-area">
-                                    <a class="btn-outline cta-link cta-link-primary" href="#0"
-                                        data-bs-toggle="modal" data-bs-target="#waitlistModal">
-                                        @lang('rotation.start')
-                                    </a>
+                                    <a class="btn-outline cta-link cta-link-primary"
+                                        href="#0" data-bs-toggle="modal" data-bs-target="#waitlistModal">@lang('rotation.start')</a>
                                 </div>
                             </div>
                         </div>
@@ -290,26 +288,26 @@
             </div>
         </div>
     </section>
-
+    
+    
     <!-- Popup Waitlist Modal -->
     <div class="modal fade" id="waitlistModal" tabindex="-1" aria-labelledby="waitlistModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content rounded-4">
                 <div class="modal-header border-0">
-                    <h5 class="modal-title" id="waitlistModalLabel">Request Access</h5>
+                    <h5 class="modal-title text-dark" id="waitlistModalLabel">@lang('rotation.request_access')</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center">
                     <div class="mb-3 text-success" style="font-size: 2rem;">📧</div>
-                    <p class="text-muted mb-4">Join our waitlist and our team will reach out to you as soon as
-                        possible.</p>
+                    <p class="text-muted mb-4">@lang('rotation.join_now')</p>
                     <form action={{ route('waitlist.store') }} method="POST"> <!-- Update action as needed -->
                         @csrf
 
                         <div class="mb-3 text-start">
                             <input type="text" name="name"
-                                class="form-control @error('name') is-invalid @enderror" placeholder="Enter your name"
+                                class="form-control @error('name') is-invalid @enderror" placeholder="@lang('rotation.name')"
                                 value={{ old('name') }}>
                         </div>
 
@@ -320,7 +318,7 @@
                         <div class="mb-3 text-start">
                             <input type="email" name="email"
                                 class="form-control @error('email') is-invalid @enderror"
-                                placeholder="Enter your email address" value={{ old('email') }}>
+                                placeholder="@lang('rotation.email')" value={{ old('email') }}>
                         </div>
 
                         @error('email')
@@ -330,14 +328,14 @@
                         <div class="mb-3 text-start">
                             <input type="text" name="phone"
                                 class="form-control @error('phone') is-invalid @enderror"
-                                placeholder="Enter your phone number" value="{{ old('phone') }}">
+                                placeholder="@lang('rotation.phone')" value="{{ old('phone') }}">
                         </div>
 
                         @error('phone')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
 
-                        <button type="submit" class="btn btn-primary w-100">Request access</button>
+                        <button type="submit" class="btn btn-primary w-100">@lang('rotation.request_access')</button>
                     </form>
                 </div>
             </div>
@@ -360,9 +358,8 @@
             </div>
         </div>
     @endif
-
-
-
+    
+    
     <!--End of .hero-text-area-->
     <!-- End  Page hero-->
     <!-- Start  services Section-->
@@ -372,7 +369,7 @@
                 <div class="content-area">
                     <span class="pre-title wow fadeInUp" data-wow-delay=".2s">@lang('rotation.service')</span>
                     <h2 class="title wow fadeInUp" data-wow-delay=".4s">
-                        <span class="hollow-text">@lang('rotation.service')</span> @lang('rotation.offer')
+                        <span class="hollow-text">@lang('rotation.offer')</span>
                     </h2>
                     <p class="subtitle wow fadeInUp" data-wow-delay=".6s">
                         @lang('rotation.provide_text')<br />
@@ -456,7 +453,7 @@
                                     <span class="pre-title wow fadeInUp"
                                         data-wow-delay=".2s">@lang('rotation.about_us')</span>
                                     <h2 class="title wow fadeInUp" data-wow-delay=".4s">
-                                        <span class="hollow-text">@lang('rotation.you')</span> @lang('rotation.with_us')
+                                        <span class="hollow-text"> @lang('rotation.with_us')</span>
                                         <span class="featured-text">
                                             @lang('rotation.impossible')
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150"
@@ -565,9 +562,6 @@
                                     </h2>
                                 </div>
                             </div>
-                            <p class="about-text">
-                                @lang('rotation.save_time')
-                            </p>
                             <div class="info-items-list">
                                 <div class="row">
                                     <div class="col-12">
@@ -590,6 +584,32 @@
                                                 </h5>
                                                 <p class="info-text">
                                                     @lang('rotation.rotation_provide')
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="info-item">
+                                            <span class="info-number">03.</span>
+                                            <div class="info-content">
+                                                <h5 class="info-title">
+                                                    @lang('rotation.third_one')
+                                                </h5>
+                                                <p class="info-text">
+                                                    @lang('rotation.third_one_text')
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="info-item">
+                                            <span class="info-number">04.</span>
+                                            <div class="info-content">
+                                                <h5 class="info-title">
+                                                    @lang('rotation.fourth_one')
+                                                </h5>
+                                                <p class="info-text">
+                                                    @lang('rotation.fourth_one_text')
                                                 </p>
                                             </div>
                                         </div>
@@ -632,9 +652,9 @@
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4 portfolio-item mobile">
                             <div class="item">
-                                <a class="portfolio-img-link" href="assets/images/portfolio/img4.png"
+                                <a class="portfolio-img-link" href="assets/images/portfolio/events.png"
                                     data-fancybox=".show-in-fancybox"><img class="portfolio-img img-fluid"
-                                        loading="lazy" src="assets/images/portfolio/img4.png"
+                                        loading="lazy" src="assets/images/portfolio/events.png"
                                         alt="portfolio item photo" /></a>
                                 <div class="item-info">
                                     <h3 class="item-title">Header</h3>
@@ -656,9 +676,9 @@
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 portfolio-item web">
                             <div class="item">
-                                <a class="portfolio-img-link" href="assets/images/portfolio/img9.png"
+                                <a class="portfolio-img-link" href="assets/images/portfolio/property.png"
                                     data-fancybox=".show-in-fancybox"><img class="portfolio-img img-fluid"
-                                        loading="lazy" src="assets/images/portfolio/img9.png"
+                                        loading="lazy" src="assets/images/portfolio/property.png"
                                         alt="portfolio item photo" /></a>
                                 <div class="item-info">
                                     <h3 class="item-title">Saved applications</h3>
@@ -668,9 +688,9 @@
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 portfolio-item web">
                             <div class="item">
-                                <a class="portfolio-img-link" href="assets/images/portfolio/img10.png"
+                                <a class="portfolio-img-link" href="assets/images/portfolio/save.png"
                                     data-fancybox=".show-in-fancybox"><img class="portfolio-img img-fluid"
-                                        loading="lazy" src="assets/images/portfolio/img10.png"
+                                        loading="lazy" src="assets/images/portfolio/save.png"
                                         alt="portfolio item photo" /></a>
                                 <div class="item-info">
                                     <h3 class="item-title">Dashboard</h3>
@@ -892,9 +912,6 @@
                                         @lang('rotation.part_time')
                                     </li>
                                     <li class="faq-answer">@lang('rotation.freelance_time')
-                                    </li>
-                                    <li class="faq-answer">
-                                        @lang('rotation.freelance_time')
                                     </li>
                                 </div>
                             </div>
@@ -1265,7 +1282,7 @@
 
     <!--     main     -->
     <script src="{{ asset('js/main.js') }}"></script>
-
+    
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const toastEl = document.querySelector('.toast');
@@ -1274,7 +1291,7 @@
                 bsToast.show();
             }
         });
-    </script>    
+    </script> 
 
 </body>
 
