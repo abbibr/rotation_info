@@ -21,19 +21,17 @@ return [
     'all_services' => 'See All Services',
     'read_more' => 'Read More',
     'business_idea' => 'Business Idea',
-    'platform_connects' => 'A platform connecting people in Uzbekistan with flexible work like part-time, full-time, internships, and temp jobs. Now with mock interviews and events, Rotation helps bridge the gap between education and employment.',
+    'platform_connects' => 'Next-gen HRTech ecosystem, offering flexible work — part-time, full-time, and internships. Now enhanced with internal portals, mock interviews, events, and mentorship to bridge education, hiring, and employee development.',
     'customer_segments' => 'Customer Segments',
-    'supporting' => 'We support businesses, universities, and learning centers by helping them find young talent, host events, and run career-related programs through a single easy-to-use platform.',
+    'supporting' => 'We support companies, banks, universities, and learning centers. From hiring young talent and hosting career events to managing internal operations through secure employee portals — all within one powerful platform.',
     'our_target' => 'Our Target',
-    'targeting' => 'We focus on 16–25-year-olds, including students and early professionals, offering flexible jobs, AI mock interviews, career tools, and access to university-linked career events and opportunities.',
+    'targeting' => 'We focus on 16–25-year-olds and early professionals for external hiring, and also serve companies with internal tools. Offering jobs, mock interviews, career events, internal portals for companies and organizations.',
     'about_us' => 'about Us',
     'you' => 'You',
     'with_us' => 'With us, you can achieve the',
     'impossible' => 'impossible',
-    'rotation_info' => 'Rotation - platform that helps both job seekers and employers
-                                find work and hire talent across various industries. It offers
-                                opportunities for both offline and remote jobs, making the
-                                hiring and job search process more efficient and accessible.',
+    'rotation_info' => 'Rotation – an all-in-one HRTech platform connecting Gen Z talent with internships, part-time and full-time jobs.
+It combines external hiring tools like event organization, mentorship, and mock interviews with internal portals for employee development — all in one seamless ecosystem.',
     'first' => 'first on field',
     'rotation_startup' => 'Connecting young talents with companies for internships, part-time, and remote jobs, as well as event-based career opportunities.',
     'easy_reach' => 'Easy To Reach',
@@ -61,7 +59,7 @@ return [
     'key_details' => 'More key details',
     'see_more' => 'See More',
     'what_is' => 'What is Rotation?',
-    'answer_ques' => 'Rotation is an innovative platform that connects businesses with professionals, streamlining hiring through AI-powered tools. It helps companies manage job postings, applications, and workforce data, while offering job seekers flexible full-time, part-time opportunities, online events, mock interviews, and skill-building resources.',
+    'answer_ques' => 'Rotation is an all-in-one HRTech platform that connects companies with Gen Z professionals, streamlining external hiring and internal development through AI-powered tools. It enables organizations to manage job postings, applications, and talent data, while offering job seekers full-time, part-time roles, online events, mock interviews, and mentorship opportunities.',
     'how_does' => 'How does Rotation help businesses?',
     'helps_business' => 'Rotation helps businesses reduce hiring time and improve
                                         recruitment efficiency by offering:',
@@ -105,7 +103,7 @@ return [
     'useful_links' => 'useful links',
     'resources' => 'Resources',
     'contact_info' => 'Contact Information',
-    'news' => 'News', 
+    'news' => 'News',
     'created_by' => 'Created by:',
     'terms' => 'Terms of Use',
     'privacy' => 'Privacy Policy',
@@ -118,4 +116,4 @@ return [
     'name' => "Enter your full name",
     'email' => 'Enter your email address',
     'phone' => 'Enter your phone Number'
-]; 
+];
